@@ -1,6 +1,7 @@
 # 🕰️ Clockworker
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 A lightweight library to spawn workers that can loop tasks, and subscribe to events.
 
 ## Installation
