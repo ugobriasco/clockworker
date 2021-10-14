@@ -15,22 +15,24 @@ npm i clockworker
 ```
 const { Worker, EventsBroker } = require("clockworker");
 
-// Instance a worker that sends an event evry 6 seconds
+// Instance a worker that sends an event every 6 seconds
 const myEventEmitter = new Worker();
-myEventEmitter.loop(6000, () => EventsBroker.emit("myEvent", "Hello there"));
+myEventEmitter.loop(6000, () => EventsBroker.emit("myEvent", "Eat"));
 
-// Lets have a worker which listens
+// Instance worker
 const myWorker = new Worker();
-// Listen to events
+
+// ... which listen to events ...
 myWorker.listen("myEvent", data => console.log(data));
-// Loopable events
+
+// ... and loops events
 const build = () => console.log("Build");
-const coffee = () => console.log("Coffe");
+const coffee = () => console.log("Drink Coffe");
 myWorker.loop(2000, () => build()); //Loop every 2 seconds
-myWorker.loop(4000, () => sleep()); //Loop every 4 seconds
+myWorker.loop(4000, () => coffee()); //Loop every 4 seconds
 
 ```
 
-## license
+## License
 
 MIT
