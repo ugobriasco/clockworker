@@ -1,6 +1,6 @@
 {
   "name": "clockworker",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Spawn workers that can loop tasks, and subscribe to events",
   "main": "index.js",
   "directories": {
