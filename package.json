@@ -1,0 +1,26 @@
+{
+  "name": "clockworker",
+  "version": "0.0.1",
+  "description": "Spawn workers that can loop tasks, and subscribe to events",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ugobriasco/clockworker.git"
+  },
+  "keywords": [
+    "cronjobs",
+    "event"
+  ],
+  "author": "Ugo Briasco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ugobriasco/clockworker/issues"
+  },
+  "homepage": "https://github.com/ugobriasco/clockworker#readme"
+}
