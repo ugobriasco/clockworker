@@ -25,7 +25,7 @@ const myWorker = new Worker();
 // ... which listen to events ...
 myWorker.listen("myEvent", data => console.log(data));
 
-// ... and loops events
+// ... and loops tasks.
 const build = () => console.log("Build");
 const coffee = () => console.log("Drink Coffe");
 myWorker.loop(2000, () => build()); //Loop every 2 seconds
