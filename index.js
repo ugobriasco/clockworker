@@ -1,3 +1,3 @@
-const { Worker, EventsBroker } = require("./lib");
+const { Worker, EventsBroker } = require('./lib');
 
 module.exports = { Worker, EventsBroker };
