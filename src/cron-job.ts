@@ -1,4 +1,4 @@
-const cronJob = (intervalInMs, fn) => {
+const cronJob = (intervalInMs: number, fn) => {
   function cb() {
     clearTimeout(timeout);
     timeout = setTimeout(cb, intervalInMs);
@@ -7,4 +7,4 @@ const cronJob = (intervalInMs, fn) => {
   let timeout = setTimeout(cb, intervalInMs);
 };
 
-module.exports = cronJob;
+export default cronJob;
