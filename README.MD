@@ -12,25 +12,24 @@ npm i clockworker
 
 ## Usage
 
-```
-const { Worker, EventsBroker } = require("clockworker");
+```javascript
+const { Clockworker, EventsBroker } = require('clockworker');
 
 // Instance a worker that sends an event every 6 seconds
-const myEventEmitter = new Worker();
-myEventEmitter.loop(6000, () => EventsBroker.emit("myEvent", "Eat"));
+const myEventEmitter = new Clockworker();
+myEventEmitter.loop(6000, () => EventsBroker.emit('myEvent', 'Eat'));
 
 // Instance worker
-const myWorker = new Worker();
+const myWorker = new Clockworker();
 
 // ... which listen to events ...
-myWorker.listen("myEvent", data => console.log(data));
+myWorker.listen('myEvent', (data) => console.log(data));
 
 // ... and loops tasks.
-const build = () => console.log("Build");
-const coffee = () => console.log("Drink Coffe");
+const build = () => console.log('Build');
+const coffee = () => console.log('Drink Coffe');
 myWorker.loop(2000, () => build()); //Loop every 2 seconds
 myWorker.loop(4000, () => coffee()); //Loop every 4 seconds
-
 ```
 
 ## License

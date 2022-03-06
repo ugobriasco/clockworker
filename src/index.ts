@@ -1,4 +1,4 @@
 import EventsBroker from './EventsBroker';
-import Worker from './Worker';
+import ClockWorker from './Worker';
 
-export { Worker, EventsBroker };
+export { ClockWorker, EventsBroker };

@@ -1,3 +1,3 @@
-import { Worker, EventsBroker } from './src';
+import { ClockWorker, EventsBroker } from './src';
 
-export { Worker, EventsBroker };
+export { ClockWorker, EventsBroker };
